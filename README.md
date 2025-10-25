@@ -55,6 +55,3 @@ start index.html
 open index.html
 # (No Linux)
 xdg-open index.html
-´´´
-## Autor
-Renato Mello - Estudante de Analise e Desenvimento de Sistemas
