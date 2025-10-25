@@ -1,0 +1,96 @@
+/* assets/css/layout.css */
+
+/* 1. Estrutura Principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-sm);
+}
+
+.section-padding {
+    padding-top: var(--space-xl);
+    padding-bottom: var(--space-xl);
+}
+
+.section-title {
+    text-align: center;
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--space-lg);
+}
+
+/* 2. Header (Usando Flexbox para alinhamento) */
+.header {
+    background-color: var(--primary);
+    color: var(--text-light);
+    padding: var(--space-sm) 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-light);
+    text-decoration: none;
+}
+.logo-link:hover { text-decoration: none; }
+
+.logo-link h1 {
+    color: var(--text-light);
+    margin-bottom: 0;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+/* 3. Footer */
+.footer {
+    background-color: var(--primary);
+    color: var(--neutral-medium);
+    padding: var(--space-lg) 0;
+    text-align: center;
+    margin-top: var(--space-xl);
+}
+
+.footer h3 {
+    color: var(--text-light);
+}
+
+.footer a {
+    color: var(--secondary);
+}
+.footer a:hover {
+    color: var(--text-light);
+}
+
+/* 4. Sistema de Grid de 12 Colunas (Mobile-First) */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--space-md);
+}
+
+/* Classes de Coluna (Padrão = mobile) */
+.col-1 { grid-column: span 1; }
+.col-2 { grid-column: span 2; }
+.col-3 { grid-column: span 3; }
+.col-4 { grid-column: span 4; }
+.col-5 { grid-column: span 5; }
+.col-6 { grid-column: span 6; }
+.col-7 { grid-column: span 7; }
+.col-8 { grid-column: span 8; }
+.col-9 { grid-column: span 9; }
+.col-10 { grid-column: span 10; }
+.col-11 { grid-column: span 11; }
+.col-12 { grid-column: span 12; }

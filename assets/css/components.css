@@ -1,0 +1,340 @@
+/* assets/css/components.css */
+
+/* 1. Navegação (Principal e Dropdown) */
+.nav {
+    display: block; /* Visível por padrão, escondido em responsive.css */
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    list-style: none;
+}
+
+.nav-link {
+    color: var(--text-light);
+    font-family: var(--font-family-heading);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    transition: var(--transition);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.nav-link:hover, .nav-link.active {
+    background-color: var(--secondary);
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--neutral-light);
+    list-style: none;
+    padding: var(--space-sm);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    min-width: 180px;
+    border-top: 3px solid var(--secondary);
+    margin-top: var(--space-xs);
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: var(--text-heading);
+    padding: var(--space-xs) var(--space-sm);
+    display: block;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--neutral-lightest);
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+/* 2. Menu Hambúrguer (Escondido por padrão) */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* 3. Botões (com estados) */
+.btn {
+    display: inline-block;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-heading);
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    border: none;
+    text-decoration: none;
+}
+.btn-full {
+    width: 100%;
+}
+
+/* Estado :hover */
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    text-decoration: none;
+}
+/* Estado :focus */
+.btn:focus-visible {
+    outline: 3px solid var(--secondary);
+    outline-offset: 2px;
+}
+/* Estado :active */
+.btn:active {
+    transform: translateY(0);
+}
+/* Estado :disabled */
+.btn:disabled {
+    background-color: var(--neutral-medium);
+    color: var(--neutral-dark);
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: var(--success);
+    color: var(--text-light);
+}
+.btn-primary:hover { background-color: #27ae60; color: var(--text-light); }
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--text-light);
+}
+.btn-secondary:hover { background-color: #2980b9; color: var(--text-light); }
+
+.btn-accent {
+    background-color: var(--accent);
+    color: var(--text-light);
+}
+.btn-accent:hover { background-color: #c0392b; color: var(--text-light); }
+
+
+/* 4. Cards (Responsivos) */
+.card {
+    background-color: var(--neutral-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden; /* Garante que a imagem respeite a borda */
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Faz os cards na mesma linha terem a mesma altura */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-content {
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Permite que o conteúdo cresça */
+}
+.card-content h3 {
+    color: var(--text-heading);
+}
+.card-content p {
+    flex-grow: 1; /* Empurra o badge/botão para o final */
+    margin-bottom: var(--space-md);
+}
+
+.card-content .btn {
+    width: 100%;
+}
+
+
+/* 5. Badges e Tags */
+.badge {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 20px; /* Formato "pílula" */
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: var(--space-sm);
+    align-self: flex-start; /* Alinha no início do card-content */
+}
+
+.badge-primary { background-color: var(--secondary); }
+.badge-accent { background-color: var(--accent); }
+
+/* 6. Formulários (Estilizados e com Validação) */
+.form {
+    padding: var(--space-lg);
+    background-color: var(--neutral-light);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.form fieldset {
+    border: none;
+    margin-bottom: var(--space-md);
+    padding: 0;
+}
+
+.form legend {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-md);
+    font-weight: 700;
+    margin-bottom: var(--space-md);
+    padding: 0;
+}
+
+.form-group {
+    margin-bottom: var(--space-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: var(--space-xs);
+    color: var(--text-heading);
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"],
+.form-group select {
+    width: 100%;
+    padding: var(--space-sm);
+    border: 2px solid var(--neutral-medium);
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-sm);
+    font-family: var(--font-family-body);
+    transition: var(--transition);
+    background-color: #fff;
+}
+
+/* Estado :focus */
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+/* Validação Visual */
+.form-group input:valid:not(:placeholder-shown) {
+    border-color: var(--success);
+}
+.form-group input:invalid:not(:placeholder-shown) {
+    border-color: var(--accent);
+}
+
+/* 7. Componentes de Feedback (Alerts) */
+.alert {
+    padding: var(--space-md);
+    border-radius: var(--border-radius);
+    margin-top: var(--space-md);
+    text-align: center;
+    font-weight: 700;
+}
+
+.alert-success {
+    background-color: var(--success);
+    color: var(--text-light);
+}
+.alert-warning {
+    background-color: var(--warning);
+    color: var(--text-heading);
+}
+.alert-danger {
+    background-color: var(--accent);
+    color: var(--text-light);
+}
+
+.hidden {
+    display: none;
+}
+
+/* 8. Componente Hero */
+.hero {
+    background-color: var(--primary);
+    color: var(--text-light);
+    text-align: center;
+    padding: var(--space-xxl) var(--space-md);
+}
+.hero h2 {
+    font-size: var(--font-size-xl);
+    color: var(--text-light);
+}
+.hero p {
+    font-size: var(--font-size-md);
+    margin-bottom: var(--space-lg);
+}
+
+/*
+9. Componentes Bônus (Modal, Toast)
+   Estilos de esqueleto para demonstrar o requisito.
+*/
+
+.modal-overlay {
+    display: none; /* Controlado por JS */
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 2000;
+}
+
+.modal {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--neutral-light);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    z-index: 2001;
+}
+
+.toast {
+    display: none; /* Controlado por JS */
+    position: fixed;
+    bottom: var(--space-md);
+    right: var(--space-md);
+    padding: var(--space-md);
+    background: var(--primary);
+    color: var(--text-light);
+    border-radius: var(--border-radius);
+    z-index: 3000;
+}

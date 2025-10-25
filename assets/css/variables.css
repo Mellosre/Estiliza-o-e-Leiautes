@@ -1,0 +1,40 @@
+/* assets/css/variables.css */
+
+:root {
+    /* 1. Paleta de Cores (Min. 8) */
+    --primary: #2c3e50;        /* Azul escuro (Header, Footer) */
+    --secondary: #3498db;      /* Azul claro (Links, Dropdown) */
+    --accent: #e74c3c;          /* Vermelho (Botão "Doe", Validação) */
+    --success: #2ecc71;        /* Verde (Botão "Participe", Sucesso) */
+    --warning: #f1c40f;        /* Amarelo (Alertas) */
+
+    --neutral-lightest: #f8f9fa; /* Fundo do site (Quase branco) */
+    --neutral-light: #ffffff;   /* Fundo de Cards/Formulários (Branco) */
+    --neutral-medium: #e0e0e0;  /* Bordas de inputs */
+    --neutral-dark: #5a6570;    /* Cor do texto principal (parágrafos) */
+    --text-heading: #333333;    /* Cor dos títulos (Preto suave) */
+    --text-light: #ffffff;      /* Cor de texto sobre fundos escuros */
+
+    /* 2. Tipografia Hierárquica (Min. 5) */
+    --font-family-body: 'Open Sans', sans-serif;
+    --font-family-heading: 'Poppins', sans-serif;
+
+    --font-size-xs: 0.875rem;  /* 14px (Badges) */
+    --font-size-sm: 1rem;      /* 16px (Body) */
+    --font-size-md: 1.25rem;   /* 20px (Títulos de Card, Legendas) */
+    --font-size-lg: 1.5rem;    /* 24px (Títulos de Seção h2) */
+    --font-size-xl: 2.25rem;   /* 36px (Títulos de Hero h2) */
+
+    /* 3. Sistema de Espaçamento Modular */
+    --space-xs: 8px;
+    --space-sm: 16px;
+    --space-md: 24px;
+    --space-lg: 32px;
+    --space-xl: 48px;
+    --space-xxl: 64px;
+
+    /* 4. Outras Variáveis de UI */
+    --border-radius: 8px;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s ease;
+}

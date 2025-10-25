@@ -1,0 +1,84 @@
+/* Breakpoints */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: none;
+        width: 100%;
+    }
+
+    .nav.active {
+        display: block;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: var(--font-size-lg);
+        color: white;
+        cursor: pointer;
+    }
+
+    .card {
+        max-width: 100%; /* Cards ocupam 100% em telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 var(--space-xs);
+    }
+
+    .hero {
+        padding: var(--space-lg) 0;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card-img {
+        height: 120px; /* Reduz altura em telas menores */
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: var(--font-size-lg);
+    }
+
+    h2 {
+        font-size: var(--font-size-md);
+    }
+
+    .btn {
+        width: 100px; /* Botões menores em telas muito pequenas */
+    }
+}

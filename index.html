@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página inicial da ONG Amor em Ação">
+    <title>Amor em Ação - Página Inicial</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/variables.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    
+    <script src="assets/js/scripts.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Logo da ONG Amor em Ação" class="logo">
+                <h1>Amor em Ação</h1>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active">Início</a></li>
+                    <li class="dropdown">
+                        <a href="projetos.html" class="nav-link">Projetos</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="projetos.html#educacao">Educação</a></li>
+                            <li><a href="projetos.html#alimentacao">Alimentação</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="cadastro.html" class="nav-link">Cadastro</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Bem-vindo à Amor em Ação</h2>
+                <p>Somos uma ONG dedicada a transformar vidas por meio de projetos sociais.</p>
+                <a href="cadastro.html" class="btn btn-primary">Participe Agora</a>
+            </div>
+        </section>
+
+        <section class="container section-padding">
+            <div class="grid">
+                <div class="col-12">
+                    <h2 class="section-title">Nossos Valores</h2>
+                </div>
+                <article class="col-12 col-md-6">
+                    <div class="card">
+                        <img src="assets/images/projeto1.jpg" alt="Crianças estudando" class="card-img">
+                        <div class="card-content">
+                            <h3>Educação</h3>
+                            <p>Promovemos acesso à educação de qualidade para comunidades vulneráveis.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card">
+                        <img src="assets/images/projeto2.jpg" alt="Distribuição de alimentos" class="card-img">
+                        <div class="card-content">
+                            <h3>Solidariedade</h3>
+                            <p>Apoiamos famílias com alimentos e recursos essenciais.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <h3>Contato</h3>
+            <address>
+                <p>Email: <a href="mailto:contato@amoremacao.org">contato@amoremacao.org</a></p>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Rua da Solidariedade, 123, São Paulo, SP</p>
+            </address>
+        </div>
+    </footer>
+</body>
+</html>
