@@ -43,10 +43,10 @@ Não é necessário um servidor. Basta clonar este repositório e abrir qualquer
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/Mellosre/Estiliza-o-e-Leiautes.git](https://github.com/Mellosre/Estiliza-o-e-Leiautes.git)
+git clone https://github.com/Mellosre/Estiliza-o-e-Leiautes.git
 
 # Navegue até a pasta
-cd projeto
+cd Estiliza-o-e-Leiautes
 
 # Abra o arquivo no navegador
 # (No Windows)
@@ -55,6 +55,6 @@ start index.html
 open index.html
 # (No Linux)
 xdg-open index.html
-
+´´´
 ## Autor
-Renato Mello - Estudante de Análise e Desenvimento de Sistemas
+Renato Mello - Estudante de Analise e Desenvimento de Sistemas
